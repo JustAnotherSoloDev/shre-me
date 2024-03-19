@@ -3,7 +3,7 @@ import "./style.css";
 function create() {
   let file = document.getElementById("file").value;
   let link = document.createElement("a");
-  link.href = "/" + file;
+  link.href = window.location.href+"/" + file;
   link.innerText = file;
   document.body.appendChild(link);
 }
